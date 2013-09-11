@@ -1,5 +1,17 @@
 myModule.config(function($routeProvider) {
 
+    $routeProvider.when("/", {
+        templateUrl: "pages/home.html",
+        controller: homeController
+    }).when("/home", {
+            templateUrl: "pages/home.html",
+            controller: homeController
+        }).when("/home", {
+            templateUrl: "pages/home.html",
+            controller: homeController
+        }).otherwise({
+            redirectTo: "/"
+        });
 
     //routing generate
     //routing generated over
