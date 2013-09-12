@@ -34,9 +34,8 @@ myModule.directive('ngTap', function() {
 var native_access;
 $(document).ready(function () {
 
-
     native_access = new NativeAccess();
-
-
+    PGLowLatencyAudio.preloadAudio('door', 'assets/www/voice/door.wav', 1);
+    PGLowLatencyAudio.preloadAudio('bongo', 'assets/www/voice/bongo.mp3', 1);
 
 });
